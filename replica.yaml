@@ -1,0 +1,9 @@
+---
+apiVersion: mongodbcommunity.mongodb.com/v1
+kind: MongoDBCommunity
+metadata:
+  name: my-mongodb
+  namespace: mongodb
+spec:
+  members: 3
+...

@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: mongodb
+  namespace: mongodb-operator
   name: mongodb-kubernetes-operator
 spec:
   replicas: 1
@@ -66,3 +66,6 @@ spec:
           readOnlyRootFilesystem: true
           runAsUser: 2000
       serviceAccountName: mongodb-kubernetes-operator
+
+
+      
